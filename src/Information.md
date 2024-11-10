@@ -6,3 +6,5 @@ Project Overview: This project focuses on developing an automated system for sor
 2. Vision System: Cameras for real-time object detection.
 3. Robotic Arm: A 6-axis arm that interacts with materials based on vision system data.
 4. Technical Documentation: Comprehensive reports covering the entire project lifecycle.
+
+
