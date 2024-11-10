@@ -178,35 +178,38 @@
 <p>Project Overview: This project focuses on developing an automated system for sorting scrap metal using vision technology and robotics. The system integrates a vision-based detection mechanism, a conveyor belt, and a robotic arm to classify and sort various types of metals for recycling purposes.</p>
 <p><strong>Key Deliverables:</strong></p>
 <ol>
-<li>Automated Conveyor System: Powered by stepper motors for precise control.</li>
+<li>Conveyor System: To move materials true out the system.</li>
 <li>Vision System: Cameras for real-time object detection.</li>
 <li>Robotic Arm: A 6-axis arm that interacts with materials based on vision system data.</li>
-<li>Technical Documentation: Comprehensive reports covering the entire project lifecycle.</li>
+<li>Flipper: To puch material of conveyor system.</li>
+<li>Documentation: Choices and why these have been made.</li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="group-information"><a class="header" href="#group-information">Group Information</a></h1>
 <div style="float: left; wdth: auto">
 <div class="table-wrapper"><table><thead><tr><th><strong>Team Member</strong></th><th><strong>Email</strong></th><th><strong>Roles</strong></th></tr></thead><tbody>
-<tr><td>Jesse de Klein</td><td>516392@student.saxion.nl</td><td></td></tr>
-<tr><td>Vincent Molenkamp</td><td>519540@student.saxion.nl</td><td></td></tr>
-<tr><td>Daan Scholten</td><td>537519@student.saxion.nl</td><td></td></tr>
+<tr><td>Jesse de Klein</td><td>516392@student.saxion.nl</td><td>General Member</td></tr>
+<tr><td>Vincent Molenkamp</td><td>519540@student.saxion.nl</td><td>General Member</td></tr>
+<tr><td>Daan Scholten</td><td>537519@student.saxion.nl</td><td>General Member</td></tr>
 <tr><td>Milan Oude Nijeweme</td><td>517922@student.saxion.nl</td><td>Group Manager</td></tr>
-<tr><td>Oriol Valles Garcia</td><td>571634@student.saxion.nl</td><td></td></tr>
+<tr><td>Oriol Valles Garcia</td><td>571634@student.saxion.nl</td><td>General Member</td></tr>
 <tr><td>Lars Schumacher</td><td>505340@student.saxion.nl</td><td>General Member</td></tr>
 </tbody></table>
 </div><div><div style="break-before: page; page-break-before: always;"></div><h1 id="project-discription"><a class="header" href="#project-discription">Project Discription</a></h1>
 <p>Project Purpose: The project aims to automate the process of metal sorting for recycling using a vision-based detection system integrated with a robotic arm for pick-and-place tasks.</p>
-<p>Objectives:</p>
+<p><strong>Objectives:</strong></p>
 <ul>
 <li>Automate the sorting process for different types of metals.</li>
 <li>Increase sorting accuracy to nearly 100%.</li>
 <li>Improve safety by minimizing human interaction and ensuring system safeguards are in place.</li>
-<li>Technologies:</li>
-</ul>
-<p>Vision System for object detection.</p>
+<li>Technologies:
 <ul>
+<li>Vision System for object detection.</li>
 <li>AI for metal recognition.</li>
 <li>Conveyor belt for material transfer.</li>
 <li>Robotic arm for picking and placing materials into designated bins.</li>
+<li>Flipper to move materials of conveyor.</li>
+</ul>
+</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="project-planning"><a class="header" href="#project-planning">Project Planning</a></h1>
 <p><img src="mdbook-plantuml-img/cbe062b7425927c6f842a3f895fba23bd2f97cee.svg" alt="" /></p>
@@ -217,26 +220,89 @@
 <p>TEST</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="procces-flowcontrol--diagrams"><a class="header" href="#procces-flowcontrol--diagrams">Procces, FlowControl &amp; Diagrams</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="safety-considerations"><a class="header" href="#safety-considerations">Safety Considerations</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="risk-analysis"><a class="header" href="#risk-analysis">Risk analysis</a></h1>
-<p>Identified Risks:</p>
 <ol>
-<li>Mechanical Failure: Failure in the conveyor or robotic arm.
+<li>
+<p>Physical Safety for Operators:</p>
 <ul>
-<li>Mitigation: Regular maintenance schedules.</li>
+<li>Enclosures &amp; Barriers: Protect areas around the robot and conveyor.</li>
+<li>Emergency Stops: Accessible buttons for immediate shutdown.</li>
 </ul>
 </li>
-<li>Vision System Errors: Inaccurate material identification due to poor lighting or sensor misalignment.
+<li>
+<p>System Safety Features:</p>
 <ul>
-<li>Mitigation: Dynamic lighting adjustments and sensor recalibration.</li>
+<li>Collision Sensors: Detect and prevent robotic collisions.</li>
+<li>Overload Protection: Prevents handling weights above capacity.</li>
 </ul>
 </li>
-<li>Robot Malfunctions: The robot fails to pick or sort objects.
+<li>
+<p>Electrical Safety:</p>
 <ul>
-<li>Mitigation: Redundant control logic and emergency stop system.</li>
+<li>Grounding &amp; Insulation: Reduces risk of electric shock.</li>
+<li>Surge Protection: Safeguards against electrical fluctuations.</li>
+</ul>
+</li>
+<li>
+<p>Monitoring &amp; Alerts:</p>
+<ul>
+<li>Real-Time Monitoring: Detects abnormalities early.</li>
+<li>Automated Alerts: Notifies of temperature or sensor issues.</li>
+</ul>
+</li>
+<li>
+<p>Maintenance &amp; Training:</p>
+<ul>
+<li>Routine Checks: Ensure all components work safely.</li>
+<li>Operator Training: Covers operation and emergency protocols.</li>
+</ul>
+</li>
+<li>
+<p>Environmental Control:</p>
+<ul>
+<li>Dust Control &amp; Ventilation: Keeps sensors clear and stable.</li>
+<li>Temperature Regulation: Prevents overheating for reliable performance.</li>
 </ul>
 </li>
 </ol>
-<p><img src="mdbook-plantuml-img/cf34a1aa84c0e32f35aaa99e71ebc96be506099b.svg" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="risk-analysis"><a class="header" href="#risk-analysis">Risk analysis</a></h1>
+<ol>
+<li>
+<p>Technical Risks:</p>
+<ul>
+<li>Risk: Component failures in PLC, sensors, or robot.</li>
+<li>Mitigation: Regular maintenance, real-time monitoring, and backup components.</li>
+</ul>
+</li>
+<li>
+<p>Sorting Accuracy Risks:</p>
+<ul>
+<li>Risk: Inaccurate sorting due to similar metal properties.</li>
+<li>Mitigation: High-resolution sensors, AI-based algorithm improvements, and periodic calibration.</li>
+</ul>
+</li>
+<li>
+<p>Integration Risks:</p>
+<ul>
+<li>Risk: Poor synchronization between conveyor and robot, leading to misplacements.</li>
+<li>Mitigation: Precise control algorithms, simulation testing, and real-time feedback.</li>
+</ul>
+</li>
+<li>
+<p>Environmental Risks:</p>
+<ul>
+<li>Risk: Dust, dirt, and temperature changes affecting system performance.</li>
+<li>Mitigation: Enclosures, protective covers, and adaptive lighting.</li>
+</ul>
+</li>
+<li>
+<p>Software Risks:</p>
+<ul>
+<li>Risk: Programming errors causing system malfunctions.</li>
+<li>Mitigation: Rigorous testing, version control, and fail-safe protocols.</li>
+</ul>
+</li>
+</ol>
+<p><img src="mdbook-plantuml-img/b40ae24a85dd1e26301bc9828a91966acc768851.svg" alt="" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="safety-intergration"><a class="header" href="#safety-intergration">Safety Intergration</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="use-of-safety-standarts"><a class="header" href="#use-of-safety-standarts">Use Of Safety Standarts</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="system-diagrams"><a class="header" href="#system-diagrams">System Diagrams</a></h1>
