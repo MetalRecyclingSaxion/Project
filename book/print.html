@@ -215,10 +215,55 @@
 <p><img src="mdbook-plantuml-img/cbe062b7425927c6f842a3f895fba23bd2f97cee.svg" alt="" /></p>
 <p><img src="mdbook-plantuml-img/7c19e6b766a4025e6db4f58c48ff4ee5615f83d2.svg" alt="" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="automation-system-blueprint"><a class="header" href="#automation-system-blueprint">Automation System Blueprint</a></h1>
-<p>Test!</p>
+<p>This process diagram illustrates the automation setup for detecting, identifying, and sorting various types of metal on a conveyor belt. The system comprises a camera with AI capabilities and a Cartesian Robot that work together to categorize and sort metal objects.</p>
+<ul>
+<li>
+<p>Detection and Identification: As metals move along the conveyor belt, a camera detects each object and, using AI, determines its type and location on the belt.</p>
+</li>
+<li>
+<p>Sorting and Placement: If a metal type is successfully identified, the information is sent to the Cartesian Robot, which moves to the specified position, picks up the object, and places it in the appropriate bin. If the metal type is unknown or not recognized, the object remains on the conveyor and is ultimately directed to an "unknown" bin.</p>
+</li>
+<li>
+<p>Continuous Operation: After each object is processed, the system resets to handle the next item on the conveyor, ensuring a continuous sorting workflow.</p>
+</li>
+</ul>
+<p>This diagram provides a high-level overview of the key components and steps in this automated sorting process.</p>
+<p><img src="mdbook-plantuml-img/e08bc45a16c53959f67efa38c4259cef6792b536.svg" alt="" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="analyses--desing"><a class="header" href="#analyses--desing">Analyses &amp; Desing</a></h1>
-<p>TEST</p>
+<p>This component diagram shows the key elements of the Metal Detection and Sorting System and their interactions.</p>
+<ul>
+<li>
+<p>Metal Detection System: The Conveyor Belt moves metal objects to the Camera &amp; AI for detection and classification.</p>
+</li>
+<li>
+<p>Control System: The AI Processing Unit analyzes the metal type, and the Control Unit directs the Cartesian Robot to sort the object.</p>
+</li>
+<li>
+<p>Sorting System: The Cartesian Robot places the metal in the correct bin or in the Unknown Bin if the type is unrecognized.</p>
+</li>
+</ul>
+<p>This diagram provides a structural overview of the system and how each component works together to automate the sorting process.</p>
+<p><img src="mdbook-plantuml-img/3d98a8836c8764fdb891cc8922ae6e369b866ed0.svg" alt="" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="procces-flowcontrol--diagrams"><a class="header" href="#procces-flowcontrol--diagrams">Procces, FlowControl &amp; Diagrams</a></h1>
+<ol>
+<li>
+<p>Detection with line scan camera:
+The line camera continuously scans the metals on the moving conveyor belt, capturing one line of an image at a time. All these line photo's whill be put together to create an image.</p>
+</li>
+<li>
+<p>AI recognition:
+The AI analyzes these images to identify the type of metal for example copper or aluminum. The right type of metal whill be chosen by comparing the images to a data base with all the metals.</p>
+</li>
+<li>
+<p>Location calculation and robot arm control:
+The system calculates the metal’s current position based on the time elapsed and speed of the conveyer belt. The robot arm uses this calculation to pick up the object at the correct moment. The robot does this by using 3 axis one that moves above the conveyer belt in the y direction, the other ones is for the z direction to pick the metal from the belt and the last one is to rotate the gripper.</p>
+</li>
+<li>
+<p>Sorting:
+The robot arm moves each piece of metal to the appropriate location, such as a bin or container for that specific metal type.</p>
+</li>
+</ol>
+<p><img src="mdbook-plantuml-img/b98d61da3a495d6a62ad4b84d9aab3e356620de1.svg" alt="" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="safety-considerations"><a class="header" href="#safety-considerations">Safety Considerations</a></h1>
 <ol>
 <li>
@@ -313,6 +358,20 @@ Failed to generate diagram (error sending request for url (http://localhost:8181
 <p>PlantUML rendering error:
 Failed to generate diagram (error sending request for url (http://localhost:8181/svg/bP512i9034NtXTuX5_02BaGiYWiNeWUGE4rhe3CfcLZixPrnOorkIbR9v_t_8TjegFRqNLauyRq42WR7iIUDFJbJx6uLUbASwkTJDLqlSXUR7Ye90usYqzi-cRGKt7YxclG_RYelzcn9eH0pbUTV1rWfjmzRRNA3DHo8Ql1ef8mTM080GmsTE3IMK1RVp9WoPtIk0IcVbI2EqSW3Du3EU4YMTLdCUotbhzXGWdUeohIOphEbK7zUymO=): error trying to connect: tcp connect error: Kan geen verbinding maken omdat de doelcomputer de verbinding actief heeft geweigerd. (os error 10061))</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="safety-diagrams"><a class="header" href="#safety-diagrams">Safety Diagrams</a></h1>
+<ol>
+<li>
+<p>Conveyer belt:
+For the conveyer belt there needs to be a safety barrier to prevent people from putting objects in between moving parts of the belt. Otherwise people could hurt them self or damage the conveyer belt.</p>
+</li>
+<li>
+<p>Emergency stop:
+For the robot there needs to be an emergency stop. This enables the user to stop the robot so they can work on the robot. And the emergency stop can stop the robot when een error occurs.</p>
+</li>
+<li>
+<p>Proximity sensor:
+By using a proximity sensor the robot can be used much safer because if a person comes to close to the robot it can stop therefore the possibility of injury is much smaller. The robot also can not go out of his working area to ensure a safer work space.</p>
+</li>
+</ol>
 <p><img src="mdbook-plantuml-img/bb0134a5caf3723056b26fa5c157a9e47babaf51.svg" alt="" /></p>
 <p><strong>Safety Mesures</strong></p>
 <p>TEST</p>
