@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="1.0Information.html"><strong aria-hidden="true">1.</strong> Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1.1GroupInformation.html"><strong aria-hidden="true">1.1.</strong> Group Information</a></li><li class="chapter-item expanded "><a href="1.2ProjectDiscription.html"><strong aria-hidden="true">1.2.</strong> Project Discription</a></li><li class="chapter-item expanded "><a href="1.3ProjectPlanning.html"><strong aria-hidden="true">1.3.</strong> Project Planning</a></li></ol></li><li class="chapter-item expanded "><a href="2.0AutomationSystemBlueprint.html"><strong aria-hidden="true">2.</strong> Automation System Blueprint</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2.1AnalysisDesign.html"><strong aria-hidden="true">2.1.</strong> Analyses & Desing</a></li><li class="chapter-item expanded "><a href="2.2ProccesFlowControlDiagrams.html"><strong aria-hidden="true">2.2.</strong> Procces, FlowControl & Diagrams</a></li></ol></li><li class="chapter-item expanded "><a href="3.0SafetyConsiderations.html"><strong aria-hidden="true">3.</strong> Safety Considerations</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3.1Riskanalysis.html"><strong aria-hidden="true">3.1.</strong> Risk analysis</a></li><li class="chapter-item expanded "><a href="3.2SafetyIntergration.html"><strong aria-hidden="true">3.2.</strong> Safety Intergration</a></li><li class="chapter-item expanded "><a href="3.3UseOfSafetyStandarts.html"><strong aria-hidden="true">3.3.</strong> Use Of Safety Standarts</a></li></ol></li><li class="chapter-item expanded "><a href="4.0SystemDiagrams.html"><strong aria-hidden="true">4.</strong> System Diagrams</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4.1BlueprintDiagram.html"><strong aria-hidden="true">4.1.</strong> Blueprint Diagram</a></li><li class="chapter-item expanded "><a href="4.2SafetyDiagrams.html"><strong aria-hidden="true">4.2.</strong> Safety Diagrams</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="1.0Information.html"><strong aria-hidden="true">1.</strong> Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1.1GroupInformation.html"><strong aria-hidden="true">1.1.</strong> Group Information</a></li><li class="chapter-item expanded "><a href="1.2ProjectDiscription.html"><strong aria-hidden="true">1.2.</strong> Project Discription</a></li><li class="chapter-item expanded "><a href="1.3ProjectPlanning.html"><strong aria-hidden="true">1.3.</strong> Project Planning</a></li></ol></li><li class="chapter-item expanded "><a href="2.0AutomationSystemBlueprint.html"><strong aria-hidden="true">2.</strong> Automation System Blueprint</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2.1AnalysisDesign.html"><strong aria-hidden="true">2.1.</strong> Analysis & Design</a></li><li class="chapter-item expanded "><a href="2.2ProccesFlowControlDiagrams.html"><strong aria-hidden="true">2.2.</strong> Procces, FlowControl & Diagrams</a></li></ol></li><li class="chapter-item expanded "><a href="3.0SafetyConsiderations.html"><strong aria-hidden="true">3.</strong> Safety Considerations</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3.1Riskanalysis.html"><strong aria-hidden="true">3.1.</strong> Risk analysis</a></li><li class="chapter-item expanded "><a href="3.2SafetyIntergration.html"><strong aria-hidden="true">3.2.</strong> Safety Intergration</a></li><li class="chapter-item expanded "><a href="3.3UseOfSafetyStandarts.html"><strong aria-hidden="true">3.3.</strong> Use Of Safety Standarts</a></li></ol></li><li class="chapter-item expanded "><a href="4.0SystemDiagrams.html"><strong aria-hidden="true">4.</strong> System Diagrams</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4.1BlueprintDiagram.html"><strong aria-hidden="true">4.1.</strong> Blueprint Diagram</a></li><li class="chapter-item expanded "><a href="4.2SafetyDiagrams.html"><strong aria-hidden="true">4.2.</strong> Safety Diagrams</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -202,7 +202,7 @@
 <tr><td>Jesse de Klein</td><td>Chapters 2, 2.1</td></tr>
 <tr><td>Vincent Molenkamp</td><td>Chapters 1, 1.1, 1.2, 1.3</td></tr>
 <tr><td>Daan Scholten</td><td>Chapters 2.2, 4.2</td></tr>
-<tr><td>Milan Oude Nijeweme</td><td>Chapters 3.2, 2.3</td></tr>
+<tr><td>Milan Oude Nijeweme</td><td>Chapters 3.2, 3.3</td></tr>
 <tr><td>Oriol Valles Garcia</td><td>Chapters 3, 3.1</td></tr>
 <tr><td>Lars Schumacher</td><td>Chapters 4, 4.1</td></tr>
 </tbody></table>
@@ -247,7 +247,22 @@
 </ul>
 <p>This diagram provides a high-level overview of the key components and steps in this automated sorting process.</p>
 <p><img src="mdbook-plantuml-img/e08bc45a16c53959f67efa38c4259cef6792b536.svg" alt="" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="analyses--desing"><a class="header" href="#analyses--desing">Analyses &amp; Desing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="analysis--design"><a class="header" href="#analysis--design">Analysis &amp; Design</a></h1>
+<p>This component diagram shows the key elements of the Metal Detection and Sorting System and their interactions.</p>
+<ul>
+<li>
+<p>Metal Detection System: The Conveyor Belt moves metal objects to the Camera &amp; AI for detection and classification.</p>
+</li>
+<li>
+<p>Control System: The AI Processing Unit analyzes the metal type, and the Control Unit directs the Cartesian Robot to sort the object.</p>
+</li>
+<li>
+<p>Sorting System: The Cartesian Robot places the metal in the correct bin or in the Unknown Bin if the type is unrecognized.</p>
+</li>
+</ul>
+<p>This diagram provides a structural overview of the system and how each component works together to automate the sorting process.</p>
+<p>PlantUML rendering error:
+Failed to generate diagram (error sending request for url (http://localhost:8181/svg/RP7Dgi8m48NtWRp3uEBk-WeN_pOkBbmKLzB5M8SIJ6Oa6HKHtztMDcZLB0_VEMSoOyquAKOz1c-DElK4Cma7OMA5kSCwOe02_aZHmvoKAdN2WBo3bKHrNCFgafI2DTOSiDfZJJ1wnpja15The7cRcV29BX9XIbvBA8hVHiD04U479eioOozI1qqMy1-befJQvZKxRTZReBl9rYZ-e_EBjI_k3NrQ7l2fvVcYKdB8i9IjVFOEr_7orpTVbvRfgUEKeuPYnwrvptBcLYfRPaoyUzpAcZi=): error trying to connect: tcp connect error: Kan geen verbinding maken omdat de doelcomputer de verbinding actief heeft geweigerd. (os error 10061))</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="procces-flowcontrol--diagrams"><a class="header" href="#procces-flowcontrol--diagrams">Procces, FlowControl &amp; Diagrams</a></h1>
 <ol>
 <li>
@@ -267,7 +282,8 @@ The system calculates the metal’s current position based on the time elapsed a
 The robot arm moves each piece of metal to the appropriate location, such as a bin or container for that specific metal type.</p>
 </li>
 </ol>
-<p><img src="mdbook-plantuml-img/b98d61da3a495d6a62ad4b84d9aab3e356620de1.svg" alt="" /></p>
+<p>Shown below is a diagram of how the system is used
+<img src="mdbook-plantuml-img/b98d61da3a495d6a62ad4b84d9aab3e356620de1.svg" alt="" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="safety-considerations"><a class="header" href="#safety-considerations">Safety Considerations</a></h1>
 <ol>
 <li>
@@ -382,8 +398,9 @@ ISO 10218-1 and ISO 10218-2: These standards cover the safety requirements for i
 <p>Each of these diagrams provides a different perspective, helping engineers and operators gain a well-rounded understanding of the system’s design, functionality, and safety protocols. Together, they support the implementation, troubleshooting, and optimization of complex automated processes.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="blueprint-diagram"><a class="header" href="#blueprint-diagram">Blueprint Diagram</a></h1>
 <p><img src="mdbook-plantuml-img/613df3f3bfd3d8cf2934bcceee72b04620c9be27.svg" alt="" /></p>
-<p><strong>System Comunication Diagram</strong>
-<img src="mdbook-plantuml-img/dad9741906803c76ff5ed81035b591293729bcdb.svg" alt="" /></p>
+<p><strong>System Comunication Diagram</strong></p>
+<p>PlantUML rendering error:
+Failed to generate diagram (error sending request for url (http://localhost:8181/svg/bLF1JiCm3BqZxH_y0_s17T2q2SHX4eXndqBgRX5f72NkHlyUkwLREi5XoYbsthEVdxFAR19thLyyM6eZ1GmCBtt4b2DQJiRlDwR5PChystPJNj_faxWCR2YSiATKnhRkSEHSHfw4ze31zliTKvpn9_fshMF9OCXpdftskrztp1JcSOgNi9w_H42Lj8tgKIKiuHcnXjOm9cSyi030X1eyMSDEUQujPg6_GMj5aD8k8UG-CxRW6Z2MtKaewyN3hOnxyJlJe83N9YM7zwEBGK5LqpbCq0_qFayW9XXMG06N2KBLnVzVgrcIkZOqUhk4ryYYDsC6hn6m56gdauH6rFCHmVxkqWm-hSjoD3SF9cYPh0mdJ9A3yn43135ic6m97zPlwZFfHH_BMAJPwEmNT76q5HaE1DI04odZakXPOQY73_03): error trying to connect: tcp connect error: Kan geen verbinding maken omdat de doelcomputer de verbinding actief heeft geweigerd. (os error 10061))</p>
 <ol>
 <li>
 <p>Components using IO-Link:
