@@ -194,8 +194,25 @@
 <tr><td>Oriol Valles Garcia</td><td>571634@student.saxion.nl</td><td>General Member</td></tr>
 <tr><td>Lars Schumacher</td><td>505340@student.saxion.nl</td><td>General Member</td></tr>
 </tbody></table>
+</div><div>
+<h1 id="work-distribution"><a class="header" href="#work-distribution">Work Distribution</a></h1>
+<div style="float: left; wdth: auto">
+<div class="table-wrapper"><table><thead><tr><th><strong>Team Member</strong></th><th><strong>Assigned chapters</strong></th></tr></thead><tbody>
+<tr><td>Jesse de Klein</td><td>Chapters 2, 2.1</td></tr>
+<tr><td>Vincent Molenkamp</td><td>Chapters 1, 1.1, 1.2, 1.3</td></tr>
+<tr><td>Daan Scholten</td><td>Chapters 2.2, 4.2</td></tr>
+<tr><td>Milan Oude Nijeweme</td><td>Chapters 3.2, 2.3</td></tr>
+<tr><td>Oriol Valles Garcia</td><td>Chapters 3, 3.1</td></tr>
+<tr><td>Lars Schumacher</td><td>Chapters 4, 4.1</td></tr>
+</tbody></table>
 </div><div><div style="break-before: page; page-break-before: always;"></div><h1 id="project-discription"><a class="header" href="#project-discription">Project Discription</a></h1>
 <p>Project Purpose: The project aims to automate the process of metal sorting for recycling using a vision-based detection system integrated with a robotic arm for pick-and-place tasks.</p>
+<p>See the figure below for the system
+<img src="./Image/MetalSortingSystem.jpg" alt="Image Of System" /></p>
+<p><strong>Image_1: (The System)</strong></p>
+<p>See the figure below for the materials that need to be sorted
+<img src="./Image/Matriaal.jpg" alt="Image Of Materials" /></p>
+<p><strong>Image_2: (The Materials)</strong></p>
 <p><strong>Objectives:</strong></p>
 <ul>
 <li>Automate the sorting process for different types of metals.</li>
@@ -349,14 +366,55 @@ The robot arm moves each piece of metal to the appropriate location, such as a b
 </ol>
 <p><img src="mdbook-plantuml-img/b40ae24a85dd1e26301bc9828a91966acc768851.svg" alt="" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="safety-intergration"><a class="header" href="#safety-intergration">Safety Intergration</a></h1>
+<p>These are the 3 safety intergration we can use in our machine</p>
+<p>Conveyor Belt Safety Barrier:
+A safety barrier around the conveyor belt is essential to prevent people from accidentally putting their hands or objects into the moving parts of the belt. If a person gets too close to the machinery, there is a risk of injury from the moving components. The barrier serves as a physical safeguard, reducing the chances of accidents. Additionally, it helps protect the equipment from potential damage caused by foreign objects or interference.</p>
+<p>Emergency Stop:
+An emergency stop is a critical safety feature for any robotic system. It provides an immediate way to halt the robot’s operation in case of a malfunction, emergency, or when maintenance is required. This can be activated manually by the operator. The emergency stop ensures that in the event of a fault or a dangerous situation, the robot can be quickly deactivated, preventing further harm or damage. It's a fundamental safety protocol for robots in industrial settings.</p>
+<p>Proximity Sensor:
+A proximity sensor enhances the safety of the robot by detecting nearby people or objects. If someone enters the robot's operational area, the sensor triggers the robot to stop, reducing the risk of injury. This is especially important in environments where humans and robots work in close proximity. Furthermore, the proximity sensor can also prevent the robot from moving out of its designated workspace, ensuring the robot operates within safe boundaries. This adds an extra layer of protection, ensuring both the safety of personnel and the proper functioning of the system.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="use-of-safety-standarts"><a class="header" href="#use-of-safety-standarts">Use Of Safety Standarts</a></h1>
+<hr />
+<p>Conveyor Belt Safety Barrier:</p>
+<p>ISO 14120: This standard specifies requirements for physical guards, such as barriers, to prevent people from directly accessing dangerous machine parts. The barrier should be robust, durable, and not easily removable without tools. This setup protects both people and the equipment from potential damage.</p>
+<hr />
+<p>Emergency Stop:
+ISO 13850: This standard specifies requirements for emergency stop equipment for machines. An emergency stop must be easily accessible and intuitively recognizable (e.g., a red button with a yellow background). The emergency stop should immediately shut down the machine upon activation and must not automatically restart after the issue is resolved; a manual reset is required.</p>
+<hr />
+<p>Proximity Sensor:
+ISO 10218-1 and ISO 10218-2: These standards cover the safety requirements for industrial robots and robot cells. Proximity sensors can be used to activate a “safeguarded stop” when someone comes too close to the robot. These standards also specify that robots should remain within a designated workspace, and proximity sensors help achieve this by setting boundaries for the robot’s working area.</p>
+<p>ISO/TS 15066: This technical specification focuses on collaboration between humans and robots. It establishes additional safety requirements for environments where humans and robots work side by side. Proximity sensors can help reduce the risk of injury by ensuring that the robot stops or slows down whenever someone enters the workspace.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="system-diagrams"><a class="header" href="#system-diagrams">System Diagrams</a></h1>
+<p>Blueprint, communication, and safety diagrams each play essential roles in visualizing and understanding complex automated systems. Below is an introduction to these types of diagrams, using a sample automation system for detecting, identifying, and sorting various types of metal on a conveyor belt.</p>
+<p>Blueprint Diagrams:</p>
+<p>Blueprint diagrams provide a structural and spatial overview of the system setup, including the arrangement of all key components, such as conveyors, cameras, and sorting robots. For this automation system, a blueprint diagram might show the camera’s position relative to the conveyor belt, the layout of bins for different types of metals, and the reach area of the Cartesian Robot. This view is crucial for understanding the physical setup and ensuring that components are effectively positioned to achieve seamless operation.</p>
+<p>Communication Diagrams:</p>
+<p>Communication diagrams focus on the information exchange between components, detailing how data flows through the system. In this setup, as metal objects travel along the conveyor belt, the camera identifies each item’s type and location, sending this data to the Cartesian Robot if an object is recognized. The robot then uses this information to position itself, pick up the identified object, and place it in the correct bin. If the metal type is not recognized, the communication system ensures the item continues along the conveyor to an "unknown" bin. Communication diagrams help clarify these interactions, ensuring that data moves smoothly between components to support efficient sorting.</p>
+<p>Safety Diagrams:</p>
+<p>Safety diagrams illustrate the safety measures and protocols within the system to prevent accidents and maintain a secure working environment. For this system, a safety diagram could highlight barriers around the conveyor, emergency stop buttons, or sensors to detect human presence near moving parts. It might also include interlocks that halt the conveyor if an object jams or if the robot encounters an unexpected obstacle. This ensures that both the equipment and any operators nearby remain safe throughout the continuous sorting process.</p>
+<p>Each of these diagrams provides a different perspective, helping engineers and operators gain a well-rounded understanding of the system’s design, functionality, and safety protocols. Together, they support the implementation, troubleshooting, and optimization of complex automated processes.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="blueprint-diagram"><a class="header" href="#blueprint-diagram">Blueprint Diagram</a></h1>
-<p>PlantUML rendering error:
-Failed to generate diagram (error sending request for url (http://localhost:8181/svg/TP8_JyCm4CNtIFaEf-nU61Woe8OWiRHIr4ZinZa5K_-JVKLKYE-EqpObJfFrxdVFxzvv4uXxEcgLPuwB0-yHYZSPf3NGdWAXBk0dpm24rSuQD0Grr-XvMYksilyWQNgehI5lLP5dltasqOprBpnP3y-eQ4qwfOfPioLq3ZtiB5b_zy3UlbkI0Yg_eFl8gcyPuCpCPL-z76J3akLXbLMppROUPowP06DF2r6KK7MVnq0mTX8-gfJGekbWnmczv0fUECLyPs5CO8VOZT33TBD_ff7YmBZfMAEuGAW4nOk6o0-cLttkaIj6KkFLiOvxfaFf3KguURoA9F0jsOkVo6WTFUNP9gvx_d9_): error trying to connect: tcp connect error: Kan geen verbinding maken omdat de doelcomputer de verbinding actief heeft geweigerd. (os error 10061))</p>
-<p><strong>System Comunication Diagram</strong></p>
-<p>PlantUML rendering error:
-Failed to generate diagram (error sending request for url (http://localhost:8181/svg/bP512i9034NtXTuX5_02BaGiYWiNeWUGE4rhe3CfcLZixPrnOorkIbR9v_t_8TjegFRqNLauyRq42WR7iIUDFJbJx6uLUbASwkTJDLqlSXUR7Ye90usYqzi-cRGKt7YxclG_RYelzcn9eH0pbUTV1rWfjmzRRNA3DHo8Ql1ef8mTM080GmsTE3IMK1RVp9WoPtIk0IcVbI2EqSW3Du3EU4YMTLdCUotbhzXGWdUeohIOphEbK7zUymO=): error trying to connect: tcp connect error: Kan geen verbinding maken omdat de doelcomputer de verbinding actief heeft geweigerd. (os error 10061))</p>
+<p><img src="mdbook-plantuml-img/613df3f3bfd3d8cf2934bcceee72b04620c9be27.svg" alt="" /></p>
+<p><strong>System Comunication Diagram</strong>
+<img src="mdbook-plantuml-img/dad9741906803c76ff5ed81035b591293729bcdb.svg" alt="" /></p>
+<ol>
+<li>
+<p>Components using IO-Link:
+2D Cartesian robot
+Controllable lights</p>
+</li>
+<li>
+<p>Components using ethernet connection:
+Hyperspectral camera</p>
+</li>
+<li>
+<p>Components using conventional IO ports on PLC:
+Start button
+Stop button
+Emergency stop
+Proximity sensor</p>
+</li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="safety-diagrams"><a class="header" href="#safety-diagrams">Safety Diagrams</a></h1>
 <ol>
 <li>
