@@ -5,7 +5,7 @@
   - [Project Discription](./1.2ProjectDiscription.md)
   - [Project Planning](./1.3ProjectPlanning.md)
 - [Automation System Blueprint](./2.0AutomationSystemBlueprint.md)
-  - [Analyses & Desing](./2.1AnalysisDesign.md)
+  - [Analysis & Design](./2.1AnalysisDesign.md)
   - [Procces, FlowControl & Diagrams](./2.2ProccesFlowControlDiagrams.md)
 - [Safety Considerations](./3.0SafetyConsiderations.md)
   - [Risk analysis](./3.1Riskanalysis.md)
