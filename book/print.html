@@ -282,7 +282,13 @@ The robot arm moves each piece of metal to the appropriate location, such as a b
 </li>
 </ol>
 <p>Shown below is a diagram of how the system is used
-<img src="mdbook-plantuml-img/b98d61da3a495d6a62ad4b84d9aab3e356620de1.svg" alt="" /></p>
+<img src="mdbook-plantuml-img/4eed6a5f91178791803f1a5d3f8e70ee304fcfec.svg" alt="" /></p>
+<p>See the figure below for the flowchart
+<img src="./Image/ComplexFlowchart.jpg" alt="Image of Flowchart" /></p>
+<p><strong>Image_3: (Image of Flowchart)</strong></p>
+<p>See the figure below for the simplefied flowchart
+<img src="./Image/SimpeleFlowChart.jpg" alt="Image of Flowchart" /></p>
+<p><strong>Image_3: (Image of Simplefied Flowchart)</strong></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="safety-considerations"><a class="header" href="#safety-considerations">Safety Considerations</a></h1>
 <ol>
 <li>
@@ -329,45 +335,81 @@ The robot arm moves each piece of metal to the appropriate location, such as a b
 </li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="risk-analysis"><a class="header" href="#risk-analysis">Risk analysis</a></h1>
-<ol>
-<li>
-<p>Technical Risks:</p>
+<p>1.Technical Risks:</p>
 <ul>
-<li>Risk: Component failures in PLC, sensors, or robot.</li>
-<li>Mitigation: Regular maintenance, real-time monitoring, and backup components.</li>
+<li>Severity: High – A component failure can lead to a complete system halt, loss of production, and potential safety hazards if a critical failure occurs while the system is operating.</li>
+<li>Likelihood: Moderate – While most industrial components are robust, wear and tear over time or manufacturing defects can cause failures.</li>
+<li>Potential Harm: Moderate – A component failure could harm personnel indirectly (e.g., from unexpected movements, robotic arms mispositioning) or lead to system downtime, requiring manual intervention.</li>
 </ul>
-</li>
-<li>
-<p>Sorting Accuracy Risks:</p>
+<p>1.1.Mitigation:</p>
 <ul>
-<li>Risk: Inaccurate sorting due to similar metal properties.</li>
-<li>Mitigation: High-resolution sensors, AI-based algorithm improvements, and periodic calibration.</li>
+<li>Regular Maintenance: Scheduled maintenance based on usage time and manufacturer recommendations.</li>
+<li>Redundancy: Install backup components for critical systems (e.g., a secondary PLC or power supply).</li>
+<li>Real-Time Monitoring: Continuous monitoring of component performance, including temperature, vibration, and power usage, to predict failures before they occur.</li>
+<li>Emergency Stop: Immediate system shutdown if critical failures are detected, triggering alarms and stopping all operations to prevent harm.</li>
 </ul>
-</li>
-<li>
-<p>Integration Risks:</p>
+<p>2.Sorting Accuracy Risks:</p>
 <ul>
-<li>Risk: Poor synchronization between conveyor and robot, leading to misplacements.</li>
-<li>Mitigation: Precise control algorithms, simulation testing, and real-time feedback.</li>
+<li>Severity: Moderate – Inaccurate sorting can cause production inefficiencies, delays, and incorrect product sorting.</li>
+<li>Likelihood: Moderate – Variability in material properties could affect sensor accuracy and the AI's ability to correctly classify materials.</li>
+<li>Potential Harm: Low – This is more of an operational risk than a safety risk but could lead to product loss or rework.</li>
 </ul>
-</li>
-<li>
-<p>Environmental Risks:</p>
+<p>2.1.Mitigation:</p>
 <ul>
-<li>Risk: Dust, dirt, and temperature changes affecting system performance.</li>
-<li>Mitigation: Enclosures, protective covers, and adaptive lighting.</li>
+<li>High-Resolution Sensors: Use sensors capable of distinguishing materials with very similar properties (e.g., spectroscopic or inductive sensors).</li>
+<li>AI Algorithm Enhancements: Improve AI accuracy by training it on a diverse set of materials, including edge cases and outliers.</li>
+<li>Calibration: Periodic sensor calibration (e.g., monthly) to ensure accurate readings.</li>
+<li>Redundant Sensors: Install multiple sensors for cross-checking results, especially in critical sorting operations.</li>
 </ul>
-</li>
-<li>
-<p>Software Risks:</p>
+<p>3.Integration Risks:</p>
 <ul>
-<li>Risk: Programming errors causing system malfunctions.</li>
-<li>Mitigation: Rigorous testing, version control, and fail-safe protocols.</li>
+<li>Severity: High – Misalignment or desynchronization between the conveyor and robot can lead to misplacements of objects, machine damage, or accidents.</li>
+<li>Likelihood: Moderate – Integration failures can occur due to unexpected load changes, communication errors, or speed mismatches.</li>
+<li>Potential Harm: Moderate – Misplacements could lead to damage to the robot, products, or even personnel if the system doesn’t stop in time.</li>
 </ul>
-</li>
-</ol>
-<p><img src="mdbook-plantuml-img/b40ae24a85dd1e26301bc9828a91966acc768851.svg" alt="" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="safety-intergration"><a class="header" href="#safety-intergration">Safety Intergration</a></h1>
+<p>3.1.Mitigation:</p>
+<ul>
+<li>Precise Control Algorithms: Implement PID or other advanced control algorithms to maintain synchronization between the conveyor and robot.</li>
+<li>Real-Time Feedback Loops: Integrate real-time feedback from sensors and encoders to automatically adjust and correct synchronization.</li>
+<li>Simulation Testing: Conduct thorough testing and simulations before full-scale deployment, using different load conditions and potential errors.</li>
+<li>Emergency Stop: If synchronization fails, trigger an emergency stop, allowing the system to halt all moving parts immediately.</li>
+</ul>
+<p>4.Environmental Risks:</p>
+<ul>
+<li>Severity: High – Dust, dirt, or temperature fluctuations can severely degrade the performance and longevity of sensitive components like sensors, actuators, and PLCs.</li>
+<li>Likelihood: High – Industrial environments typically have fluctuating temperatures and dust accumulation, which are difficult to control.</li>
+<li>Potential Harm: Low to Moderate – Dust or dirt could indirectly harm workers by affecting system safety or indirectly causing malfunctions, but direct physical harm is unlikely.</li>
+</ul>
+<p>4.1.Mitigation:</p>
+<ul>
+<li>Sealing and Enclosures: Use IP65-rated enclosures and protective covers to safeguard sensitive components from dust and dirt.</li>
+<li>Environmental Control: Maintain temperature-controlled environments using HVAC systems to avoid extreme fluctuations.</li>
+<li>Scheduled Cleaning: Regular cleaning of equipment and workspace to remove accumulated dust.</li>
+<li>Air Filtration: Use industrial-grade HEPA filters in the work area to minimize airborne particulates.</li>
+</ul>
+<p>5.Software Risks:</p>
+<ul>
+<li>Severity: High – A programming error can cause unplanned system movements or malfunctions, resulting in potential injuries or damage.</li>
+<li>Likelihood: Low to Moderate – Software errors can occur during the development or updating phases but can be minimized with proper testing.</li>
+<li>Potential Harm: High – Malfunctions, such as unexpected robotic movements or incorrect actions, can directly harm personnel, especially near moving parts.</li>
+</ul>
+<p>5.1.Mitigation:</p>
+<ul>
+<li>Rigorous Testing: Implement a robust testing strategy, including unit tests, integration tests, and system-wide validation under various conditions.</li>
+<li>Version Control: Use Git or other version control systems to track changes in the software, ensuring easy rollback in case of an error.</li>
+<li>Fail-Safe Protocols: Implement fail-safe mechanisms that halt the system upon error detection, immediately stopping all movements and preventing further malfunctions.</li>
+<li>Manual Overrides: Allow operators to manually intervene and stop the system if a software error is detected.</li>
+</ul>
+<p>SUMMARY TABLE</p>
+<div style="float: left; wdth: auto">
+<div class="table-wrapper"><table><thead><tr><th><strong>Risk</strong></th><th><strong>Severity</strong></th><th><strong>Likelihood</strong></th><th><strong>Potential Harm</strong></th><th><strong>Mitigation</strong></th></tr></thead><tbody>
+<tr><td><strong>Technical Risks</strong></td><td>HIGH</td><td>MODERATE</td><td>MODERATE</td><td>Regular maintenance, redundancy, real-time monitoring, emergency stop.</td></tr>
+<tr><td><strong>Sorting Accuracy Risks</strong></td><td>MODERATE</td><td>MODERATE</td><td>LOW</td><td>High-resolution sensors, AI improvements, calibration, redundant sensors.</td></tr>
+<tr><td><strong>Integration Risks</strong></td><td>HIGH</td><td>MODERATE</td><td>MODERATE</td><td>Control algorithms, real-time feedback, simulation testing, emergency stop.</td></tr>
+<tr><td><strong>Environmental Risks</strong></td><td>HIGH</td><td>HIGH</td><td>LOW TO MODERATE</td><td>Sealing, environmental control, scheduled cleaning, air filtration.</td></tr>
+<tr><td><strong>Software Risks</strong></td><td>HIGH</td><td>LOW TO MODERATE</td><td>HIGH</td><td>Rigorous testing, version control, fail-safe protocols, manual overrides.</td></tr>
+</tbody></table>
+</div><div><div style="break-before: page; page-break-before: always;"></div><h1 id="safety-intergration"><a class="header" href="#safety-intergration">Safety Intergration</a></h1>
 <p>These are the 3 safety intergration we can use in our machine</p>
 <p>Conveyor Belt Safety Barrier:
 A safety barrier around the conveyor belt is essential to prevent people from accidentally putting their hands or objects into the moving parts of the belt. If a person gets too close to the machinery, there is a risk of injury from the moving components. The barrier serves as a physical safeguard, reducing the chances of accidents. Additionally, it helps protect the equipment from potential damage caused by foreign objects or interference.</p>
