@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="1.0Information.html"><strong aria-hidden="true">1.</strong> Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1.1GroupInformation.html"><strong aria-hidden="true">1.1.</strong> Group Information</a></li><li class="chapter-item expanded "><a href="1.2ProjectDiscription.html"><strong aria-hidden="true">1.2.</strong> Project Discription</a></li><li class="chapter-item expanded "><a href="1.3ProjectPlanning.html"><strong aria-hidden="true">1.3.</strong> Project Planning</a></li></ol></li><li class="chapter-item expanded "><a href="2.0AutomationSystemBlueprint.html"><strong aria-hidden="true">2.</strong> Automation System Blueprint</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2.1AnalysisDesign.html"><strong aria-hidden="true">2.1.</strong> Analysis & Design</a></li><li class="chapter-item expanded "><a href="2.2ProccesFlowControlDiagrams.html"><strong aria-hidden="true">2.2.</strong> Procces, FlowControl & Diagrams</a></li></ol></li><li class="chapter-item expanded "><a href="3.0SafetyConsiderations.html"><strong aria-hidden="true">3.</strong> Safety Considerations</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3.1Riskanalysis.html"><strong aria-hidden="true">3.1.</strong> Risk analysis</a></li><li class="chapter-item expanded "><a href="3.2SafetyIntergration.html"><strong aria-hidden="true">3.2.</strong> Safety Intergration</a></li><li class="chapter-item expanded "><a href="3.3UseOfSafetyStandarts.html"><strong aria-hidden="true">3.3.</strong> Use Of Safety Standarts</a></li></ol></li><li class="chapter-item expanded "><a href="4.0SystemDiagrams.html"><strong aria-hidden="true">4.</strong> System Diagrams</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4.1BlueprintDiagram.html"><strong aria-hidden="true">4.1.</strong> Blueprint Diagram</a></li><li class="chapter-item expanded "><a href="4.2SafetyDiagrams.html"><strong aria-hidden="true">4.2.</strong> Safety Diagrams</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="1.0Information.html"><strong aria-hidden="true">1.</strong> Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1.1GroupInformation.html"><strong aria-hidden="true">1.1.</strong> Group Information</a></li><li class="chapter-item expanded "><a href="1.2ProjectDiscription.html"><strong aria-hidden="true">1.2.</strong> Project Discription</a></li><li class="chapter-item expanded "><a href="1.3ProjectPlanning.html"><strong aria-hidden="true">1.3.</strong> Project Planning</a></li></ol></li><li class="chapter-item expanded "><a href="2.0AutomationSystemBlueprint.html"><strong aria-hidden="true">2.</strong> Automation System Blueprint</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2.1AnalysisDesign.html"><strong aria-hidden="true">2.1.</strong> Analysis & Design</a></li><li class="chapter-item expanded "><a href="2.2ProccesFlowControlDiagrams.html"><strong aria-hidden="true">2.2.</strong> Procces, FlowControl & Diagrams</a></li><li class="chapter-item expanded "><a href="2.3ErrorHandeling.html"><strong aria-hidden="true">2.3.</strong> Error Handeling</a></li></ol></li><li class="chapter-item expanded "><a href="3.0SafetyConsiderations.html"><strong aria-hidden="true">3.</strong> Safety Considerations</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3.1Riskanalysis.html"><strong aria-hidden="true">3.1.</strong> Risk analysis</a></li><li class="chapter-item expanded "><a href="3.2SafetyIntergration.html"><strong aria-hidden="true">3.2.</strong> Safety Intergration</a></li><li class="chapter-item expanded "><a href="3.3UseOfSafetyStandarts.html"><strong aria-hidden="true">3.3.</strong> Use Of Safety Standarts</a></li></ol></li><li class="chapter-item expanded "><a href="4.0SystemDiagrams.html"><strong aria-hidden="true">4.</strong> System Diagrams</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4.1BlueprintDiagram.html"><strong aria-hidden="true">4.1.</strong> Blueprint Diagram</a></li><li class="chapter-item expanded "><a href="4.2SafetyDiagrams.html"><strong aria-hidden="true">4.2.</strong> Safety Diagrams</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -230,8 +230,36 @@
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="project-planning"><a class="header" href="#project-planning">Project Planning</a></h1>
-<p><img src="mdbook-plantuml-img/cbe062b7425927c6f842a3f895fba23bd2f97cee.svg" alt="" /></p>
-<p><img src="mdbook-plantuml-img/7c19e6b766a4025e6db4f58c48ff4ee5615f83d2.svg" alt="" /></p>
+<pre><code class="language-plantuml">@startgantt
+Project starts 2024-09-01
+[Phase 1: Research and Planning] lasts 4 weeks
+[Phase 2: Development] lasts 6 weeks
+[Phase 3: Implementation] lasts 6 weeks
+[Phase 4: Testing and Iteration] lasts 3 weeks
+[Phase 5: Documentation and Presentation] lasts 1 week
+@endgantt
+</code></pre>
+<pre><code class="language-plantuml">@startuml
+title Project Timeline (20 Weeks)
+
+participant "Research Phase" as RP
+participant "Development Phase" as DP
+participant "Implementation Phase" as IP
+participant "Testing Phase" as TP
+participant "Final Documentation" as FD
+
+RP -&gt; RP: Weeks 1 - 4
+RP --&gt; DP: Start Development
+DP -&gt; DP: Weeks 5 - 10
+DP --&gt; IP: Start Implementation
+IP -&gt; IP: Weeks 11 - 16
+IP --&gt; TP: Start Testing
+TP -&gt; TP: Weeks 17 - 19
+TP --&gt; FD: Finalize Documentation
+FD -&gt; FD: Week 20
+
+@enduml
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="automation-system-blueprint"><a class="header" href="#automation-system-blueprint">Automation System Blueprint</a></h1>
 <p>This process diagram illustrates the automation setup for detecting, identifying, and sorting various types of metal on a conveyor belt. The system comprises a camera with AI capabilities and a Cartesian Robot that work together to categorize and sort metal objects.</p>
 <ul>
@@ -246,7 +274,42 @@
 </li>
 </ul>
 <p>This diagram provides a high-level overview of the key components and steps in this automated sorting process.</p>
-<p><img src="mdbook-plantuml-img/e08bc45a16c53959f67efa38c4259cef6792b536.svg" alt="" /></p>
+<pre><code class="language-plantuml">@startuml
+title Process Diagram - Metal Detection and Sorting
+
+start
+:Start process;
+:Metals on conveyor belt;
+
+partition "Camera &amp; AI" {
+    :Detect metal;
+    :Identify metal type;
+    :Determine location on belt;
+}
+
+if (Is metal type detected?) then (Yes)
+    :Send location and type to Cartesian Robot;
+else (No)
+    :Object moves to unknown bin;
+    stop
+endif
+
+partition "Cartesian Robot" {
+    :Receive location and type;
+    :Move to metal position;
+    :Grab metal;
+    if (Is correct bin for type?) then (Yes)
+        :Place metal in correct bin;
+    else (No)
+        :Place in unknown bin;
+    endif
+}
+
+:Process completed for this object;
+stop
+
+@enduml
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="analysis--design"><a class="header" href="#analysis--design">Analysis &amp; Design</a></h1>
 <p>This component diagram shows the key elements of the Metal Detection and Sorting System and their interactions.</p>
 <ul>
@@ -261,7 +324,29 @@
 </li>
 </ul>
 <p>This diagram provides a structural overview of the system and how each component works together to automate the sorting process.</p>
-<p><img src="mdbook-plantuml-img/3d98a8836c8764fdb891cc8922ae6e369b866ed0.svg" alt="" /></p>
+<pre><code class="language-plantuml">
+@startuml
+title Component Diagram - Metal Detection and Sorting System
+
+package "Metal Detection System" {
+    [Conveyor Belt] --&gt; [Camera &amp; AI]
+    [Camera &amp; AI] --&gt; [AI Processing Unit]
+}
+
+package "Control System" {
+    [AI Processing Unit] --&gt; [Control Unit]
+    [Control Unit] --&gt; [Cartesian Robot]
+}
+
+package "Sorting System" {
+    [Cartesian Robot] --&gt; [Sorting Bins]
+}
+
+[Sorting Bins] --&gt; [Unknown Bin]
+
+@enduml
+
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="procces-flowcontrol--diagrams"><a class="header" href="#procces-flowcontrol--diagrams">Procces, FlowControl &amp; Diagrams</a></h1>
 <ol>
 <li>
@@ -281,14 +366,46 @@ The system calculates the metal’s current position based on the time elapsed a
 The robot arm moves each piece of metal to the appropriate location, such as a bin or container for that specific metal type.</p>
 </li>
 </ol>
-<p>Shown below is a diagram of how the system is used
-<img src="mdbook-plantuml-img/4eed6a5f91178791803f1a5d3f8e70ee304fcfec.svg" alt="" /></p>
+<p>Shown below is a diagram of how the system is used</p>
+<pre><code class="language-plantuml">@startuml
+actor User
+actor ConveyorBelt as CB
+actor LineCamera as LC
+actor AIRecognition as AI
+actor MetalDatabase as DB
+actor PositionCalculator as PC
+actor RobotArm as RA
+
+== Start Conveyor Belt ==
+User -&gt; CB : Start conveyor belt
+
+== Metal Detection ==
+CB -&gt; LC : Move metal objects on conveyor
+LC -&gt; LC : Detect metals and capture image
+LC -&gt; AI : Send image to AI for recognition
+
+== AI Metal Recognition ==
+AI -&gt; DB : Compare image with metal database
+DB --&gt; AI : Return metal type (e.g., Copper, Aluminum)
+
+== Location Calculation ==
+AI -&gt; PC : Send metal type and detection time
+PC -&gt; CB : Retrieve conveyor speed
+PC -&gt; RA : Calculate position of metal
+
+== Robot Arm Action ==
+RA -&gt; RA : Move to calculated position
+RA -&gt; RA : Pick up metal
+RA -&gt; RA : Place metal in the correct container
+@enduml
+</code></pre>
 <p>See the figure below for the flowchart
 <img src="./Image/ComplexFlowchart.jpg" alt="Image of Flowchart" /></p>
 <p><strong>Image_3: (Image of Flowchart)</strong></p>
 <p>See the figure below for the simplefied flowchart
 <img src="./Image/SimpeleFlowChart.jpg" alt="Image of Flowchart" /></p>
 <p><strong>Image_3: (Image of Simplefied Flowchart)</strong></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="error-handeling"><a class="header" href="#error-handeling">Error Handeling</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="safety-considerations"><a class="header" href="#safety-considerations">Safety Considerations</a></h1>
 <ol>
 <li>
@@ -367,6 +484,9 @@ The robot arm moves each piece of metal to the appropriate location, such as a b
 <li>Likelihood: Moderate – Integration failures can occur due to unexpected load changes, communication errors, or speed mismatches.</li>
 <li>Potential Harm: Moderate – Misplacements could lead to damage to the robot, products, or even personnel if the system doesn’t stop in time.</li>
 </ul>
+<p>-Unexpected Robotic Movements: If the robot misplaces or drops objects due to synchronization failures, those objects could strike a person nearby, leading to potential injuries.
+-Collision Risk: A desynchronized robotic machine might collide with other machinery, fixtures, or even personnel in its working area, resulting in direct physical harm.
+-Manual Intervention: During integration failures, operators may be required to intervene manually, placing them in proximity to moving parts and increasing the likelihood of injuries, such as pinching, crushing, or being struck by sudden movements.</p>
 <p>3.1.Mitigation:</p>
 <ul>
 <li>Precise Control Algorithms: Implement PID or other advanced control algorithms to maintain synchronization between the conveyor and robot.</li>
@@ -438,9 +558,37 @@ ISO 10218-1 and ISO 10218-2: These standards cover the safety requirements for i
 <p>Safety diagrams illustrate the safety measures and protocols within the system to prevent accidents and maintain a secure working environment. For this system, a safety diagram could highlight barriers around the conveyor, emergency stop buttons, or sensors to detect human presence near moving parts. It might also include interlocks that halt the conveyor if an object jams or if the robot encounters an unexpected obstacle. This ensures that both the equipment and any operators nearby remain safe throughout the continuous sorting process.</p>
 <p>Each of these diagrams provides a different perspective, helping engineers and operators gain a well-rounded understanding of the system’s design, functionality, and safety protocols. Together, they support the implementation, troubleshooting, and optimization of complex automated processes.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="blueprint-diagram"><a class="header" href="#blueprint-diagram">Blueprint Diagram</a></h1>
-<p><img src="mdbook-plantuml-img/613df3f3bfd3d8cf2934bcceee72b04620c9be27.svg" alt="" /></p>
+<pre><code class="language-plantuml">@startuml
+package "Vision System" {
+  component Camera
+  component "Lighting Control"
+}
+
+package "Conveyor Belt System" {
+  component "Conveyor Belt"
+  component "Stepper Motor"
+}
+
+package "Robotic Arm" {
+  component "2-Axis Robot"
+  component "Grippers"
+}
+
+package "Control System" {
+  component "PLC"
+}
+
+Camera --&gt; "Lighting Control": Adjust Lighting
+Camera --&gt; PLC: Send Material Data
+"Conveyor Belt" --&gt; PLC: Speed Data
+"2-Axis Robot" --&gt; PLC: Pick-and-Place Actions
+"PLC" --&gt; "Lighting Control": Real-time Adjustments
+"PLC" --&gt; "Stepper Motor": Conveyor Control
+"PLC" --&gt; "Grippers": Pick Command
+@enduml
+</code></pre>
 <p><strong>System Comunication Diagram</strong>
-<img src="mdbook-plantuml-img/6b54b65cf93e345a60f678e7ee700aa3459bf79a.svg" alt="" /></p>
+<img src="./Image/CommunicationDiagram.jpg" alt="Image of Flowchart" /></p>
 <ol>
 <li>
 <p>Components using IO-Link:
@@ -474,7 +622,18 @@ For the robot there needs to be an emergency stop. This enables the user to stop
 By using a proximity sensor the robot can be used much safer because if a person comes to close to the robot it can stop therefore the possibility of injury is much smaller. The robot also can not go out of his working area to ensure a safer work space.</p>
 </li>
 </ol>
-<p><img src="mdbook-plantuml-img/bb0134a5caf3723056b26fa5c157a9e47babaf51.svg" alt="" /></p>
+<pre><code class="language-plantuml">@startuml
+component Robot
+component Conveyor
+component Emergency_Stop
+component Proximity_Sensor
+component Safety_Barrier
+
+Robot -down-&gt; Proximity_Sensor: Monitor Area
+Robot -left-&gt; Emergency_Stop: Stop if Error
+Conveyor -up-&gt; Safety_Barrier: Prevent Access
+@enduml
+</code></pre>
 <p><strong>Safety Mesures</strong></p>
 <p>TEST</p>
 
