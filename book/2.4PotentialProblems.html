@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Potential Problems - MetalRecyclingProject_2024</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="1.0Information.html"><strong aria-hidden="true">1.</strong> Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1.1GroupInformation.html"><strong aria-hidden="true">1.1.</strong> Group Information</a></li><li class="chapter-item expanded "><a href="1.2ProjectDiscription.html"><strong aria-hidden="true">1.2.</strong> Project Discription</a></li><li class="chapter-item expanded "><a href="1.3ProjectPlanning.html"><strong aria-hidden="true">1.3.</strong> Project Planning</a></li></ol></li><li class="chapter-item expanded "><a href="2.0AutomationSystemBlueprint.html"><strong aria-hidden="true">2.</strong> Automation System Blueprint</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2.1AnalysisDesign.html"><strong aria-hidden="true">2.1.</strong> Analysis & Design</a></li><li class="chapter-item expanded "><a href="2.2ProccesFlowControlDiagrams.html"><strong aria-hidden="true">2.2.</strong> Procces, FlowControl & Diagrams</a></li><li class="chapter-item expanded "><a href="2.3ErrorHandeling.html"><strong aria-hidden="true">2.3.</strong> Error Handeling</a></li><li class="chapter-item expanded "><a href="2.4PotentialProblems.html" class="active"><strong aria-hidden="true">2.4.</strong> Potential Problems</a></li></ol></li><li class="chapter-item expanded "><a href="3.0SafetyConsiderations.html"><strong aria-hidden="true">3.</strong> Safety Considerations</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3.1Riskanalysis.html"><strong aria-hidden="true">3.1.</strong> Risk analysis</a></li><li class="chapter-item expanded "><a href="3.2SafetyIntergration.html"><strong aria-hidden="true">3.2.</strong> Safety Intergration</a></li><li class="chapter-item expanded "><a href="3.3UseOfSafetyStandarts.html"><strong aria-hidden="true">3.3.</strong> Use Of Safety Standarts</a></li></ol></li><li class="chapter-item expanded "><a href="4.0SystemDiagrams.html"><strong aria-hidden="true">4.</strong> System Diagrams</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4.1BlueprintDiagram.html"><strong aria-hidden="true">4.1.</strong> Blueprint Diagram</a></li><li class="chapter-item expanded "><a href="4.2SafetyDiagrams.html"><strong aria-hidden="true">4.2.</strong> Safety Diagrams</a></li></ol></li><li class="chapter-item expanded "><a href="5.0PreperationForImplementation.html"><strong aria-hidden="true">5.</strong> Preparation for implementation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="5.1SelfEvaluation.html"><strong aria-hidden="true">5.1.</strong> Self evaluation</a></li><li class="chapter-item expanded "><a href="5.2FutureImprovements.html"><strong aria-hidden="true">5.2.</strong> Future improvements</a></li></ol></li><li class="chapter-item expanded "><a href="6.0Realisation.html"><strong aria-hidden="true">6.</strong> Realisation</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">MetalRecyclingProject_2024</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="potential-problems"><a class="header" href="#potential-problems">Potential Problems</a></h1>
+<p>To ensure smooth operation and minimize disruptions, it’s important to anticipate and address potential issues in each process. Below is an overview of possible problems and measures to mitigate them.</p>
+<ol>
+<li>General Issues
+<ul>
+<li>Breakdowns or Malfunctions: Equipment failures due to wear and tear or technical faults.</li>
+<li>Software Bugs: Errors in programming affecting performance.</li>
+<li>Power Problems: Interruptions or insufficient power supply.</li>
+<li>Lack of Precision: Inaccurate operations due to calibration or design flaws.</li>
+<li>Challenging Work Environment: Poor lighting, extreme or contamination can hinder performance.</li>
+<li>Communication Issues: Inefficient data exchange between different processes can lead to errors.</li>
+<li>Misalignment: Improper positioning of components affecting workflow.</li>
+<li>Synchronization Problems: Mismatched timing between interconnected processes.</li>
+</ul>
+</li>
+<li>Camera
+<ul>
+<li>Incorrect Material Detection: AI may misidentify the material type, leading to sorting errors.</li>
+<li>Faulty Coordinates: The camera may provide incorrect positional data to the machine.</li>
+</ul>
+</li>
+<li>Flippers
+<ul>
+<li>Inadequate Motor Strength: Servo motors may struggle to handle heavier objects.</li>
+<li>Close Proximity of Metals: Overlapping or tightly packed metals can hinder separation.</li>
+<li>Metal Obstructions: Bits of metal can get stuck under the flippers, reducing effectiveness.</li>
+</ul>
+</li>
+<li>Robot
+<ul>
+<li>Connectivity Issues: Network or communication failures impacting robot control.</li>
+<li>System Complexity: The robot’s design or interface may be difficult to operate or troubleshoot.</li>
+</ul>
+</li>
+<li>Gripper
+<ul>
+<li>Insufficient Strength: The solenoid may not generate enough force to pick up heavier parts.</li>
+<li>Shape Challenges: Irregularly shaped metals may be difficult to grip securely.</li>
+<li>Close Proximity of Metals: Metals positioned too closely can prevent effective picking.</li>
+<li>Orientation Issues: Poor alignment of materials may make gripping inefficient.</li>
+</ul>
+</li>
+</ol>
+<h2 id="preventative-measures"><a class="header" href="#preventative-measures">Preventative Measures</a></h2>
+<p>To reduce the likelihood of these issues, the following steps can be implemented:</p>
+<p>Regular Inspections: Conduct frequent checks to identify and address wear, tear, or misalignments early.
+Material Selection: Use high-quality, durable materials tailored to the specific demands of each process to reduce the risk of failures.
+Routine Calibration: Regularly calibrate equipment to improve accuracy and consistency in sorting and handling.
+Environmental Optimization: Maintain a clean and suitable working environment to support optimal performance.
+By taking these measures, the overall efficiency and reliability of the system can be significantly enhanced, reducing downtime and ensuring better results.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="2.3ErrorHandeling.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="3.0SafetyConsiderations.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="2.3ErrorHandeling.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="3.0SafetyConsiderations.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
