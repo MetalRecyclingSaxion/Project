@@ -15,3 +15,6 @@
 - [System Diagrams](./4.0SystemDiagrams.md)
   - [Blueprint Diagram](./4.1BlueprintDiagram.md)
   - [Safety Diagrams](./4.2SafetyDiagrams.md)
+- [Preparation for implementation](./5.0PreperationForImplementation.md)
+  - [Self evaluation](./5.1SelfEvaluation.md)
+  - [Future improvements](./5.2FutureImprovements.md)
