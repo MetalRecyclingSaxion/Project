@@ -406,6 +406,76 @@ RA -&gt; RA : Place metal in the correct container
 <img src="./Image/SimpeleFlowChart.jpg" alt="Image of Flowchart" /></p>
 <p><strong>Image_3: (Image of Simplefied Flowchart)</strong></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="error-handeling"><a class="header" href="#error-handeling">Error Handeling</a></h1>
+<ol>
+<li>
+<p>Possible faults or errors:
+a. Power failure
+b. Failed to establish connection to camera system
+c. Failed to home robot
+d. Robot not or eratically moving
+e. Robot not in Expected position
+f. Flippers non functional</p>
+</li>
+<li>
+<p>How to handle error:
+a. Power failure
+Fault Trigger:</p>
+<p>When the system experiences a sudden loss of power.
+Possible causes: Power supply failure, loose cables, or an external power outage.</p>
+<p>Recovery/Reset:</p>
+<p>Restore power to the system and verify stable voltage levels.
+Ensure all connections are secure.
+Restart the system, ensuring a controlled initialization process.
+Check for any data corruption or system errors caused by the abrupt shutdown.</p>
+<p>b. Failed to establish connection to camera system
+Fault Trigger:</p>
+<p>When the system cannot detect or connect to the camera during initialization or operation.
+Possible causes: Network issue, incorrect IP configuration, hardware failure.</p>
+<p>Recovery/Reset:</p>
+<p>Check camera power and physical connections.
+Ensure the IP configuration matches (e.g., static IP or DHCP setup).
+Restart the camera and the system.
+Verify the camera is accessible via diagnostics tools (e.g., vendor software for Allied Vision Manta).
+If persistent, reset to factory settings or reconfigure the camera</p>
+<p>c. Failed to home robot
+Fault Trigger:</p>
+<p>When the robot fails to reach the home position during a homing sequence.
+Possible causes: Obstructions, sensor misalignment, motor/encoder issues, or software configuration errors.</p>
+<p>Recovery/Reset:</p>
+<p>Inspect for physical obstructions or interference.
+Check sensor alignment and functionality.
+Reset the homing parameters and retry the homing process.
+Verify motor function and encoder feedback.
+If unresolved, restart the system and recalibrate.</p>
+<p>d. Robot not or eratically moving
+Fault Trigger:</p>
+<p>When the robot's movements are unresponsive, jerky, or inconsistent with commands.
+Possible causes: Motor issues, stepper driver problems, mechanical faults, or software glitches.</p>
+<p>Recovery/Reset:</p>
+<p>Inspect mechanical components for wear, obstructions, or misalignment.
+Verify motor wiring and driver settings.
+Check the belt drives
+Check software for proper command sequencing and ensure no conflicts.
+Restart the system and reinitialize the motion control system.</p>
+<p>e. Robot not in Expected position
+Fault Trigger:</p>
+<p>When the robot deviates from the expected position during operation.
+Possible causes: Missed steps or external interference.</p>
+<p>Recovery/Reset:</p>
+<p>Perform a homing sequence to reestablish the robot's reference position.
+Inspect for mechanical backlash or slippage.
+Analyze logs for command discrepancies.</p>
+<p>f. Flippers non functional
+Fault Trigger:</p>
+<p>When the flipper mechanism fails to respond or perform its intended action.
+Possible causes: Mechanical jam, motor/servo failure, or communication issue.</p>
+<p>Recovery/Reset:</p>
+<p>Inspect the flipper mechanism for jams or blockages.
+Test the motor/servo functionality and replace if defective.
+Check the communication link (e.g., wiring, protocols) to ensure proper control signals.
+Restart and test the flipper system in isolation.</p>
+</li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="safety-considerations"><a class="header" href="#safety-considerations">Safety Considerations</a></h1>
 <ol>
 <li>
