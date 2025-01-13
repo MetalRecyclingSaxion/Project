@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="1.0Information.html"><strong aria-hidden="true">1.</strong> Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1.1GroupInformation.html"><strong aria-hidden="true">1.1.</strong> Group Information</a></li><li class="chapter-item expanded "><a href="1.2ProjectDiscription.html"><strong aria-hidden="true">1.2.</strong> Project Discription</a></li><li class="chapter-item expanded "><a href="1.3ProjectPlanning.html"><strong aria-hidden="true">1.3.</strong> Project Planning</a></li></ol></li><li class="chapter-item expanded "><a href="2.0AutomationSystemBlueprint.html"><strong aria-hidden="true">2.</strong> Automation System Blueprint</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2.1AnalysisDesign.html"><strong aria-hidden="true">2.1.</strong> Analysis & Design</a></li><li class="chapter-item expanded "><a href="2.2ProccesFlowControlDiagrams.html"><strong aria-hidden="true">2.2.</strong> Procces, FlowControl & Diagrams</a></li><li class="chapter-item expanded "><a href="2.3ErrorHandeling.html"><strong aria-hidden="true">2.3.</strong> Error Handeling</a></li></ol></li><li class="chapter-item expanded "><a href="3.0SafetyConsiderations.html"><strong aria-hidden="true">3.</strong> Safety Considerations</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3.1Riskanalysis.html"><strong aria-hidden="true">3.1.</strong> Risk analysis</a></li><li class="chapter-item expanded "><a href="3.2SafetyIntergration.html"><strong aria-hidden="true">3.2.</strong> Safety Intergration</a></li><li class="chapter-item expanded "><a href="3.3UseOfSafetyStandarts.html"><strong aria-hidden="true">3.3.</strong> Use Of Safety Standarts</a></li></ol></li><li class="chapter-item expanded "><a href="4.0SystemDiagrams.html"><strong aria-hidden="true">4.</strong> System Diagrams</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4.1BlueprintDiagram.html"><strong aria-hidden="true">4.1.</strong> Blueprint Diagram</a></li><li class="chapter-item expanded "><a href="4.2SafetyDiagrams.html"><strong aria-hidden="true">4.2.</strong> Safety Diagrams</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="1.0Information.html"><strong aria-hidden="true">1.</strong> Information</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1.1GroupInformation.html"><strong aria-hidden="true">1.1.</strong> Group Information</a></li><li class="chapter-item expanded "><a href="1.2ProjectDiscription.html"><strong aria-hidden="true">1.2.</strong> Project Discription</a></li><li class="chapter-item expanded "><a href="1.3ProjectPlanning.html"><strong aria-hidden="true">1.3.</strong> Project Planning</a></li></ol></li><li class="chapter-item expanded "><a href="2.0AutomationSystemBlueprint.html"><strong aria-hidden="true">2.</strong> Automation System Blueprint</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2.1AnalysisDesign.html"><strong aria-hidden="true">2.1.</strong> Analysis & Design</a></li><li class="chapter-item expanded "><a href="2.2ProccesFlowControlDiagrams.html"><strong aria-hidden="true">2.2.</strong> Procces, FlowControl & Diagrams</a></li><li class="chapter-item expanded "><a href="2.3ErrorHandeling.html"><strong aria-hidden="true">2.3.</strong> Error Handeling</a></li></ol></li><li class="chapter-item expanded "><a href="3.0SafetyConsiderations.html"><strong aria-hidden="true">3.</strong> Safety Considerations</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3.1Riskanalysis.html"><strong aria-hidden="true">3.1.</strong> Risk analysis</a></li><li class="chapter-item expanded "><a href="3.2SafetyIntergration.html"><strong aria-hidden="true">3.2.</strong> Safety Intergration</a></li><li class="chapter-item expanded "><a href="3.3UseOfSafetyStandarts.html"><strong aria-hidden="true">3.3.</strong> Use Of Safety Standarts</a></li></ol></li><li class="chapter-item expanded "><a href="4.0SystemDiagrams.html"><strong aria-hidden="true">4.</strong> System Diagrams</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="4.1BlueprintDiagram.html"><strong aria-hidden="true">4.1.</strong> Blueprint Diagram</a></li><li class="chapter-item expanded "><a href="4.2SafetyDiagrams.html"><strong aria-hidden="true">4.2.</strong> Safety Diagrams</a></li></ol></li><li class="chapter-item expanded "><a href="5.0PreperationForImplementation.html"><strong aria-hidden="true">5.</strong> Preparation for implementation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="5.1SelfEvaluation.html"><strong aria-hidden="true">5.1.</strong> Self evaluation</a></li><li class="chapter-item expanded "><a href="5.2FutureImprovements.html"><strong aria-hidden="true">5.2.</strong> Future improvements</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -230,36 +230,10 @@
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="project-planning"><a class="header" href="#project-planning">Project Planning</a></h1>
-<pre><code class="language-plantuml">@startgantt
-Project starts 2024-09-01
-[Phase 1: Research and Planning] lasts 4 weeks
-[Phase 2: Development] lasts 6 weeks
-[Phase 3: Implementation] lasts 6 weeks
-[Phase 4: Testing and Iteration] lasts 3 weeks
-[Phase 5: Documentation and Presentation] lasts 1 week
-@endgantt
-</code></pre>
-<pre><code class="language-plantuml">@startuml
-title Project Timeline (20 Weeks)
-
-participant "Research Phase" as RP
-participant "Development Phase" as DP
-participant "Implementation Phase" as IP
-participant "Testing Phase" as TP
-participant "Final Documentation" as FD
-
-RP -&gt; RP: Weeks 1 - 4
-RP --&gt; DP: Start Development
-DP -&gt; DP: Weeks 5 - 10
-DP --&gt; IP: Start Implementation
-IP -&gt; IP: Weeks 11 - 16
-IP --&gt; TP: Start Testing
-TP -&gt; TP: Weeks 17 - 19
-TP --&gt; FD: Finalize Documentation
-FD -&gt; FD: Week 20
-
-@enduml
-</code></pre>
+<p>PlantUML rendering error:
+Failed to generate diagram (error sending request for url (http://localhost:8181/svg/TP3B2i9034NtXVv3Vg3GbuApwi9DTqNSYOlGXhOwpPIPgB_lMBNWWDjmRavoAoTefKSMYQF6cWkr0ilCGPxcPPBkaZIBerCpe2F851p84Tfs0EGE6etC8_TdqEXyf8G7qTMjVAvWJtVIPfw8vKjj0wfGK4-pfXU3CXh-1vOAZkJ42nTxBMH_-2BWDrvlsjkwztspzHy4ecm9nb55t7tAU08=): error trying to connect: tcp connect error: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión. (os error 10061))</p>
+<p>PlantUML rendering error:
+Failed to generate diagram (error sending request for url (http://localhost:8181/svg/NP6zRiCW58Lt9DxXAbCxHBAZ_gWPgWp84flb8dL6xbL3Wh5bI8OyVIuGsOv7xla-uC311ps6IsSv2oPOX7hiJzW6KAP3Qnp2oww0NyIpV-MCiu5eqvf1km2R1ZtgiJr2VTGUDw0zDFMA4NX5smyTqcB6n1gJtM0nGZgOtYr8kIOL-c3S_m9HQwGoJbiGVNkPTanW9MA5feRjDrrqdsj12LjuosEQ2vh_n3U1nSqv4qaIa_HEKbdaEGLoifwBS2QJAEVJud7bHmueKPFvACQPIegQbS-eVEM0aahi8LKqDtnkoLabu4545tP5R7n0zvU--0u=): error trying to connect: tcp connect error: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión. (os error 10061))</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="automation-system-blueprint"><a class="header" href="#automation-system-blueprint">Automation System Blueprint</a></h1>
 <p>This process diagram illustrates the automation setup for detecting, identifying, and sorting various types of metal on a conveyor belt. The system comprises a camera with AI capabilities and a Cartesian Robot that work together to categorize and sort metal objects.</p>
 <ul>
@@ -274,42 +248,8 @@ FD -&gt; FD: Week 20
 </li>
 </ul>
 <p>This diagram provides a high-level overview of the key components and steps in this automated sorting process.</p>
-<pre><code class="language-plantuml">@startuml
-title Process Diagram - Metal Detection and Sorting
-
-start
-:Start process;
-:Metals on conveyor belt;
-
-partition "Camera &amp; AI" {
-    :Detect metal;
-    :Identify metal type;
-    :Determine location on belt;
-}
-
-if (Is metal type detected?) then (Yes)
-    :Send location and type to Cartesian Robot;
-else (No)
-    :Object moves to unknown bin;
-    stop
-endif
-
-partition "Cartesian Robot" {
-    :Receive location and type;
-    :Move to metal position;
-    :Grab metal;
-    if (Is correct bin for type?) then (Yes)
-        :Place metal in correct bin;
-    else (No)
-        :Place in unknown bin;
-    endif
-}
-
-:Process completed for this object;
-stop
-
-@enduml
-</code></pre>
+<p>PlantUML rendering error:
+Failed to generate diagram (error sending request for url (http://localhost:8181/svg/RPB1JiCm38RlbVeErWveE_02wu6XJK8x3ARjn35DtIsGnbMI3LM8TyT9K-WeLQLAQVxFltzxvRom_jBeFFFAQuIz9OdEmKQ9anKDtCCElT2mGO_IAp8WJ0L7ibwPKvxbMGJasV8Olj3sye8Feiu1AoIPAtPaeKJjYo1g-QwAjDbQD6W5tC7ZTWQVUGRyBFjgq0H4aSws5Hglwgu_1T-rM8oksqOP14rIH2w_gTfNAAXgc6_TI0fLB87LmmBy6GtCNz4j4k-8tECFAZGS9PvWpSRHAM7WG2K5F6g7C7-cGVjIlaNhT4KN51VpRkY3tIYJx3fFBUjCfUf95ZVqtpmEA55TSUffI637vKArli6MN2GEVv-iA6_2J758iZQOPMzGytm2yPyy8cElXSJ4LsOiJSm_GOn4V7sQGke_JcSvR9safjKycAgtSrQyFp7F8YnQY2tFLgoC2_iD): error trying to connect: tcp connect error: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión. (os error 10061))</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="analysis--design"><a class="header" href="#analysis--design">Analysis &amp; Design</a></h1>
 <p>This component diagram shows the key elements of the Metal Detection and Sorting System and their interactions.</p>
 <ul>
@@ -324,29 +264,8 @@ stop
 </li>
 </ul>
 <p>This diagram provides a structural overview of the system and how each component works together to automate the sorting process.</p>
-<pre><code class="language-plantuml">
-@startuml
-title Component Diagram - Metal Detection and Sorting System
-
-package "Metal Detection System" {
-    [Conveyor Belt] --&gt; [Camera &amp; AI]
-    [Camera &amp; AI] --&gt; [AI Processing Unit]
-}
-
-package "Control System" {
-    [AI Processing Unit] --&gt; [Control Unit]
-    [Control Unit] --&gt; [Cartesian Robot]
-}
-
-package "Sorting System" {
-    [Cartesian Robot] --&gt; [Sorting Bins]
-}
-
-[Sorting Bins] --&gt; [Unknown Bin]
-
-@enduml
-
-</code></pre>
+<p>PlantUML rendering error:
+Failed to generate diagram (error sending request for url (http://localhost:8181/svg/RP7Dgi8m48NtWRp3uEBk-WeN_pOkBbmKLzB5M8SIJ6Oa6HKHtztMDcZLB0_VEMSoOyquAKOz1c-DElK4Cma7OMA5kSCwOe02_aZHmvoKAdN2WBo3bKHrNCFgafI2DTOSiDfZJJ1wnpja15The7cRcV29BX9XIbvBA8hVHiD04U479eioOozI1qqMy1-befJQvZKxRTZReBl9rYZ-e_EBjI_k3NrQ7l2fvVcYKdB8i9IjVFOEr_7orpTVbvRfgUEKeuPYnwrvptBcLYfRPaoyUzpAcZi=): error trying to connect: tcp connect error: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión. (os error 10061))</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="procces-flowcontrol--diagrams"><a class="header" href="#procces-flowcontrol--diagrams">Procces, FlowControl &amp; Diagrams</a></h1>
 <ol>
 <li>
@@ -367,38 +286,8 @@ The robot arm moves each piece of metal to the appropriate location, such as a b
 </li>
 </ol>
 <p>Shown below is a diagram of how the system is used</p>
-<pre><code class="language-plantuml">@startuml
-actor User
-actor ConveyorBelt as CB
-actor LineCamera as LC
-actor AIRecognition as AI
-actor MetalDatabase as DB
-actor PositionCalculator as PC
-actor RobotArm as RA
-
-== Start Conveyor Belt ==
-User -&gt; CB : Start conveyor belt
-
-== Metal Detection ==
-CB -&gt; LC : Move metal objects on conveyor
-LC -&gt; LC : Detect metals and capture image
-LC -&gt; AI : Send image to AI for recognition
-
-== AI Metal Recognition ==
-AI -&gt; DB : Compare image with metal database
-DB --&gt; AI : Return metal type (e.g., Copper, Aluminum)
-
-== Location Calculation ==
-AI -&gt; PC : Send metal type and detection time
-PC -&gt; CB : Retrieve conveyor speed
-PC -&gt; RA : Calculate position of metal
-
-== Robot Arm Action ==
-RA -&gt; RA : Move to calculated position
-RA -&gt; RA : Pick up metal
-RA -&gt; RA : Place metal in the correct container
-@enduml
-</code></pre>
+<p>PlantUML rendering error:
+Failed to generate diagram (error sending request for url (http://localhost:8181/svg/LPFTJiCm38NlA_KTV0aIy018GvJiPjAGgY8Um4lD23HDbQOWtXuxYxljhhAFJpx_z7bE6DFYXxf2cqA4zvcYVfim_j1VY2yq9C0Pp8jczcuaWvuYIdnlDDxiEhBXEBhamYYfPgUfLqeuR37X0MUIr7PrQyES2mmETXbGGfnlLzSk749gefTerzHLNMqsy2RWAo9anischgG1k7zYM7Wi8gkY0ujAUSQ1BIMocLLAkOGBzuOBNyCFWS-QSFXYpGmiKgEwOf5AJnudyGmuzc1nIaiaS1wFfDfc9pp4wHo652JqmLJnFB82nuaJt-KqXP0JRBMLrapm4-eZyElIP-7jouphYdNt-d97Z3GMIVgR26xeuVXmnpxJHF4Ecc7nRbpyRM7O1ulvNTtADKDhj9qBIsc-NqUQd6U8rgpRO8ReY0UxBcIUY7hLT8sqLLuZcCfLGFWulL70yZM0d4DpNXtNgaDU7K_NgbE_MbtfMcU_OPdK-p8peDNjE-xZKuXZb2qpUK8-VZw1Psu-<em>pZ</em>): error trying to connect: tcp connect error: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión. (os error 10061))</p>
 <p>See the figure below for the flowchart
 <img src="./Image/ComplexFlowchart.jpg" alt="Image of Flowchart" /></p>
 <p><strong>Image_3: (Image of Flowchart)</strong></p>
@@ -407,19 +296,22 @@ RA -&gt; RA : Place metal in the correct container
 <p><strong>Image_3: (Image of Simplefied Flowchart)</strong></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="error-handeling"><a class="header" href="#error-handeling">Error Handeling</a></h1>
 <ol>
+<li>Possible faults or errors:</li>
+</ol>
+<div class="table-wrapper"><table><thead><tr><th><strong>Error identified</strong></th></tr></thead><tbody>
+<tr><td>a. Power failure</td></tr>
+<tr><td>b. Failed to establish connection to camera system</td></tr>
+<tr><td>c. Failed to home robot</td></tr>
+<tr><td>d. Robot not or eratically moving</td></tr>
+<tr><td>e. Robot not in Expected position</td></tr>
+<tr><td>f. Flippers non functional</td></tr>
+</tbody></table>
+</div>
+<ol>
 <li>
-<p>Possible faults or errors:
-a. Power failure
-b. Failed to establish connection to camera system
-c. Failed to home robot
-d. Robot not or eratically moving
-e. Robot not in Expected position
-f. Flippers non functional</p>
-</li>
-<li>
-<p>How to handle error:
-a. Power failure
-Fault Trigger:</p>
+<p>How to handle error:</p>
+<p><strong>a. Power failure</strong></p>
+<p>Fault Trigger:</p>
 <p>When the system experiences a sudden loss of power.
 Possible causes: Power supply failure, loose cables, or an external power outage.</p>
 <p>Recovery/Reset:</p>
@@ -427,8 +319,8 @@ Possible causes: Power supply failure, loose cables, or an external power outage
 Ensure all connections are secure.
 Restart the system, ensuring a controlled initialization process.
 Check for any data corruption or system errors caused by the abrupt shutdown.</p>
-<p>b. Failed to establish connection to camera system
-Fault Trigger:</p>
+<p><strong>b. Failed to establish connection to camera system</strong></p>
+<p>Fault Trigger:</p>
 <p>When the system cannot detect or connect to the camera during initialization or operation.
 Possible causes: Network issue, incorrect IP configuration, hardware failure.</p>
 <p>Recovery/Reset:</p>
@@ -437,8 +329,8 @@ Ensure the IP configuration matches (e.g., static IP or DHCP setup).
 Restart the camera and the system.
 Verify the camera is accessible via diagnostics tools (e.g., vendor software for Allied Vision Manta).
 If persistent, reset to factory settings or reconfigure the camera</p>
-<p>c. Failed to home robot
-Fault Trigger:</p>
+<p><strong>c. Failed to home robot</strong></p>
+<p>Fault Trigger:</p>
 <p>When the robot fails to reach the home position during a homing sequence.
 Possible causes: Obstructions, sensor misalignment, motor/encoder issues, or software configuration errors.</p>
 <p>Recovery/Reset:</p>
@@ -447,8 +339,8 @@ Check sensor alignment and functionality.
 Reset the homing parameters and retry the homing process.
 Verify motor function and encoder feedback.
 If unresolved, restart the system and recalibrate.</p>
-<p>d. Robot not or eratically moving
-Fault Trigger:</p>
+<p><strong>d. Robot not or eratically moving</strong></p>
+<p>Fault Trigger:</p>
 <p>When the robot's movements are unresponsive, jerky, or inconsistent with commands.
 Possible causes: Motor issues, stepper driver problems, mechanical faults, or software glitches.</p>
 <p>Recovery/Reset:</p>
@@ -457,16 +349,16 @@ Verify motor wiring and driver settings.
 Check the belt drives
 Check software for proper command sequencing and ensure no conflicts.
 Restart the system and reinitialize the motion control system.</p>
-<p>e. Robot not in Expected position
-Fault Trigger:</p>
+<p><strong>e. Robot not in Expected position</strong></p>
+<p>Fault Trigger:</p>
 <p>When the robot deviates from the expected position during operation.
 Possible causes: Missed steps or external interference.</p>
 <p>Recovery/Reset:</p>
 <p>Perform a homing sequence to reestablish the robot's reference position.
 Inspect for mechanical backlash or slippage.
 Analyze logs for command discrepancies.</p>
-<p>f. Flippers non functional
-Fault Trigger:</p>
+<p><strong>f. Flippers non functional</strong></p>
+<p>Fault Trigger:</p>
 <p>When the flipper mechanism fails to respond or perform its intended action.
 Possible causes: Mechanical jam, motor/servo failure, or communication issue.</p>
 <p>Recovery/Reset:</p>
@@ -628,35 +520,8 @@ ISO 10218-1 and ISO 10218-2: These standards cover the safety requirements for i
 <p>Safety diagrams illustrate the safety measures and protocols within the system to prevent accidents and maintain a secure working environment. For this system, a safety diagram could highlight barriers around the conveyor, emergency stop buttons, or sensors to detect human presence near moving parts. It might also include interlocks that halt the conveyor if an object jams or if the robot encounters an unexpected obstacle. This ensures that both the equipment and any operators nearby remain safe throughout the continuous sorting process.</p>
 <p>Each of these diagrams provides a different perspective, helping engineers and operators gain a well-rounded understanding of the system’s design, functionality, and safety protocols. Together, they support the implementation, troubleshooting, and optimization of complex automated processes.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="blueprint-diagram"><a class="header" href="#blueprint-diagram">Blueprint Diagram</a></h1>
-<pre><code class="language-plantuml">@startuml
-package "Vision System" {
-  component Camera
-  component "Lighting Control"
-}
-
-package "Conveyor Belt System" {
-  component "Conveyor Belt"
-  component "Stepper Motor"
-}
-
-package "Robotic Arm" {
-  component "2-Axis Robot"
-  component "Grippers"
-}
-
-package "Control System" {
-  component "PLC"
-}
-
-Camera --&gt; "Lighting Control": Adjust Lighting
-Camera --&gt; PLC: Send Material Data
-"Conveyor Belt" --&gt; PLC: Speed Data
-"2-Axis Robot" --&gt; PLC: Pick-and-Place Actions
-"PLC" --&gt; "Lighting Control": Real-time Adjustments
-"PLC" --&gt; "Stepper Motor": Conveyor Control
-"PLC" --&gt; "Grippers": Pick Command
-@enduml
-</code></pre>
+<p>PlantUML rendering error:
+Failed to generate diagram (error sending request for url (http://localhost:8181/svg/TP9FJyCm3CNlbVeThDvpuTW3MYaIbqsgLecxIQqIbZzLuY4cn7SdtTQnbFPg__po_9nDOFHyD3hF1fG7x0cALnMKiz2U0fCfu3lF0AGpWxDa6Meqv36j5LlLlxEoFTJEidUwoBEVFBlJZFLFEZaFJwHvJJgbYbcpPHe6yh1pxFo_1_RkpR6IKFa5tGTHVQa0PsOk--BLA1kMB8-hh9fjjlKqSya4X7XSYAA4gliu1eQfa_1HfOIMR0SxPF8ADJmZntndOTp10r4tGSbcVqoZv46WxKIZKH9KakD5G-H7qwi-zuHQi39qTMpYdkbGUeCIRXwl8WbyI_RY9pB6H4zvjedhdh_SBm==): error trying to connect: tcp connect error: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión. (os error 10061))</p>
 <p><strong>System Comunication Diagram</strong>
 <img src="./Image/CommunicationDiagram.jpg" alt="Image of Flowchart" /></p>
 <ol>
@@ -692,20 +557,47 @@ For the robot there needs to be an emergency stop. This enables the user to stop
 By using a proximity sensor the robot can be used much safer because if a person comes to close to the robot it can stop therefore the possibility of injury is much smaller. The robot also can not go out of his working area to ensure a safer work space.</p>
 </li>
 </ol>
-<pre><code class="language-plantuml">@startuml
-component Robot
-component Conveyor
-component Emergency_Stop
-component Proximity_Sensor
-component Safety_Barrier
-
-Robot -down-&gt; Proximity_Sensor: Monitor Area
-Robot -left-&gt; Emergency_Stop: Stop if Error
-Conveyor -up-&gt; Safety_Barrier: Prevent Access
-@enduml
-</code></pre>
+<p>PlantUML rendering error:
+Failed to generate diagram (error sending request for url (http://localhost:8181/svg/PP1D2eD038NtWdV81Ro0Yw8jBWkb7g1CnrW6d4GoqTRRTnHQ7DnayNxu7gc26j793tbcsOzCI0ftVhBkXGlJZ0lBNciyoWl9BezMUTmxD-6FyqwZWnJILcjwZCRPY3YCJfvjC2WwVbDnEdHBk38vPO5QqFpJ0_OQq-c64jOBheT6PCN-PaCnZJ6Tiil8mddTL5kB8UHPXTHjd_W2): error trying to connect: tcp connect error: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión. (os error 10061))</p>
 <p><strong>Safety Mesures</strong></p>
 <p>TEST</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="preparation-for-implementation"><a class="header" href="#preparation-for-implementation">Preparation for Implementation</a></h1>
+<p>As part of our preparation for the implementation phase of the Project Industrial Automation, our group has conducted a thorough self-evaluation of our teamwork. This evaluation provided insights into our strengths and areas that require improvement.</p>
+<p>Additionally, we have engaged in discussions about future improvements to ensure the success of our 2nd quartile objectives.</p>
+<p>This analysis  will serve as the foundation for a more streamlined and successful implementation process in the upcoming phase.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="self-evaluation"><a class="header" href="#self-evaluation">Self Evaluation</a></h1>
+<p><strong>Jesse de Klein</strong></p>
+<p><strong>Vincent Molenkamp</strong></p>
+<p><strong>Daan Scholten</strong></p>
+<p><strong>Milan Oude Nijeweme</strong></p>
+<p><strong>Oriol Valles Garcia</strong></p>
+<p>For the project , I effectively identified key risks and mitigation strategies, ensuring a proactive approach to potential challenges. My ability to assess and visualize risks through PlantUML diagrams allowed for clear communication of project vulnerabilities.</p>
+<p>I encountered some difficulties in quantifying certain risks, which I plan to address with more data-driven analysis in future assessments.</p>
+<p><strong>Lars Schumacher</strong></p>
+<p>Over the past period, I’ve encountered some personal challenges that affected my time management. These issues caused occasional delays in meeting deadlines and balancing priorities effectively. I acknowledge that I could have handled my schedule better. These issues are now resolved and should be less present in the future.</p>
+<p>Additionally, I realize I should have been more proactive in reminding and encouraging others to complete their tasks on time. There were moments when I relied too much on others to manage their responsibilities without providing adequate follow-up or reminders. Moving forward, I will make more effort to check in with teammates and offer support where necessary to ensure that deadlines are met collectively.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="future-improvements"><a class="header" href="#future-improvements">Future improvements</a></h1>
+<p><strong>Identified improvement areas</strong></p>
+<div style="float: left; wdth: auto">
+<div class="table-wrapper"><table><thead><tr><th><strong>improvement areas</strong></th><th><strong>Category</strong></th></tr></thead><tbody>
+<tr><td>Communication with client</td><td>Group / Personal</td></tr>
+<tr><td>Project group management</td><td>Group</td></tr>
+<tr><td>General documentation</td><td>Document</td></tr>
+<tr><td>Software functionality</td><td>Software</td></tr>
+<tr><td>Improvement of drive system</td><td>Design</td></tr>
+</tbody></table>
+</div><div>
+<p><strong>Improvement plan</strong></p>
+<p>Communication with client:</p>
+<p>One of the main challenges we've encountered is clearly understanding the client's needs, partly due to a language barrier. This has led to misunderstandings and inefficiencies. To improve communication, we plan to send documentation ahead of meetings, allowing the client to review and clarify any points before the discussion. This proactive approach will help reduce confusion, ensure alignment, and make meetings more productive by addressing potential issues beforehand.</p>
+<p>Project group management:</p>
+<p>One of the challenges we faced was the lack of a clear leader to assign tasks and remind team members of their responsibilities. This led to confusion and inefficiency in managing workloads. To address this, we are now implementing WhatsApp polls to streamline task assignment and ensure clarity in what needs to be done. Additionally, we are being more assertive in assigning work to specific individuals, making it clear who is responsible for each task. These changes aim to improve accountability, communication, and the overall flow of the project.</p>
+<p>General documentation:</p>
+<p>Keeping documents such as requirement specifications and architectural decision records (ADRs) up to date has been a challenge, often leading to misalignment and delays. To address this, we plan to schedule regular reviews to ensure all documentation reflects the current state of the project.</p>
+<p>Software functionality:</p>
+<p>The software is set to include advanced timing-based calculation functionalities in a future update. This feature will allow users to input specific time-related parameters, such as cycle durations or process intervals, to perform precise computations. Once implemented, these calculations can be utilized for scenarios like synchronization, scheduling, and throughput optimization. With this planned addition. operations.</p>
+<p>Improvement of drive system:</p>
+<p>Switching from an all-screw drive system to a belt drive is a strategic improvement that offers several key advantages. Belt drives are faster and more efficient, as they can achieve higher speeds with lower energy consumption due to reduced friction compared to screw mechanisms. Maintenance is simplified with belt drives, as they are less prone to wear and require fewer adjustments over time. The reduced weight and cost of a belt drive system further enhance its suitability for modern, lightweight, and cost-effective designs.</p>
 
                     </main>
 
